@@ -2,6 +2,6 @@
 <details>
 <summary>Process Management</summary>
 
-- [Fork](process/fork/fork.md)
-- [Shared Memory](process/shm/shm.md)
+- [Fork](process/fork/)
+- [Shared Memory](process/shm/)
 <details>
