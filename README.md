@@ -1,11 +1,15 @@
+
+
 ### C++ Practice
+
 [Original Resource](https://github.com/jwasham/coding-interview-university) by John Washam
+
 ## Data Structures
 
 <details>
 <summary>Array</summary>
 
-- ###
+* ###
     - Implement an automatically resizing vector.
     - [Dyanamic Array](/array/array.h)
     - [Tests](/array/test_array.cpp)
@@ -43,3 +47,16 @@
     - [x] Space
         - contiguous in memory, so proximity helps performance
         - space needed = (array capacity, which is >= n) * size of item, but even if 2n, still O(n)
+</details>
+<details> 
+<summary>Process</summary>
+
+- ###
+
+    - Implementing OS process concepts
+    - [Fork](os/process/fork/unix_fork.c)
+    - [Shared-Memory-CONSUMER](os/process/shm/consumer-posix-shared-mem.c)
+    - [Shared-Memory-PRODUCER](os/process/shm/producer-posix-shared-mem.c)
+</details>
+    
+
