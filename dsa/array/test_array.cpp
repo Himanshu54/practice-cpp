@@ -42,4 +42,5 @@ int main(){
         ar.pop();
     }
     assert(ar.capacity() == 8);
+    return 0;
 }

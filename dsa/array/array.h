@@ -25,6 +25,7 @@ class IntegerArray{
         int at(int index){
             if(checkBounds(index))
                 return *(ptr+index);
+            return -1;
         }
         /* Return True if array is empty
          */
@@ -172,8 +173,6 @@ class IntegerArray{
                free(ptr);
                ptr = new_ptr;
             }
-            else {
-                return 1;
-            }
+            return 1;
         }
 };

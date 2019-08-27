@@ -41,3 +41,24 @@
         - contiguous in memory, so proximity helps performance
         - space needed = (array capacity, which is >= n) * size of item, but even if 2n, still O(n)
 </details>
+<details>
+<summary>Circular Array (aka Circular Buffer)</summary>
+
+* FIFO 
+- [Circular Array Code](circular_array.h)
+- [Tests](test_circular_buffer.cpp)
+- Resource:
+    - [MathCS Website](http://www.mathcs.emory.edu/~cheung/Courses/171/Syllabus/8-List/array-queue2.html)
+    - [eapbg YouTube](https://www.youtube.com/watch?v=GbBrp6K7IvM)
+- Checks:
+    - [x] Implement a fixed size circular buffer
+    - [x] size() returns number of current items
+    - [x] capacity() max items it can hold
+    - [x] is_empty() 
+    - [x] is_full()
+    - [x] insert() insert an item
+    - [x] pop() return and remove item
+    - [x] peek() return item at top of buffer
+    * Common Assumtion : Circular Buffer is full when there is one empty slot.
+
+</details>
