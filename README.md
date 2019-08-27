@@ -55,8 +55,10 @@
 
     - Implementing OS process concepts
     - [Fork](os/process/fork/unix_fork.c)
-    - [Shared-Memory-CONSUMER](os/process/shm/consumer-posix-shared-mem.c)
+    - [Shared-Memory-CONSUMER](os/process/shm/consumer-posix-shared-mem.c) 
+        -  -lrt flag to compile
     - [Shared-Memory-PRODUCER](os/process/shm/producer-posix-shared-mem.c)
+       -  -lrt flag to compile
 </details>
     
 
