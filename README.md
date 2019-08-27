@@ -1,5 +1,5 @@
 ### C/Cpp Practice
 
 
-- [Data Structure and Algorithms](dsa/dsa.md)
-- [Operating System](os/os.md)
+- [Data Structure and Algorithms](dsa/README.md)
+- [Operating System](os/README.md)

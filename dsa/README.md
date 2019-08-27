@@ -4,8 +4,7 @@
 
 *   Data Structure in C/CPP
 
-    - [Array](array/array.md)
-</details>
+    - [Array](array/)
 <details>
 <summary>Algorithms</summary>
 </details>
