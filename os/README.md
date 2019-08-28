@@ -5,4 +5,5 @@
 - [Fork](process/fork/)
 - [Shared Memory](process/shm/)
 - [Pipes](process/pipes/)
-<details>
+- [Pthread](process/pthread)
+</details>
