@@ -6,6 +6,7 @@
 
     - [Array](array/)
     - [Linked List](linkedlist/)
+</details>
 <details>
 <summary>Algorithms</summary>
 </details>
