@@ -17,14 +17,17 @@ int bfs(std::vector<std::vector<int>> &Adj, int n, int s) {
   while (!q.empty()) {
     int v = q.front();
     q.pop();
+    std::cout<<v<<" : ";
     for (int u : Adj[v]) {
       if (!used[u]) {
+        std::cout<<u<<",";
         q.push(u);
         used[u] = true;
         d[u] = d[v] + 1;
         p[u] = v;
       }
     }
+    std::cout<<std::endl;
   }
   return 0;
 }
@@ -43,7 +46,6 @@ int main(){
     adj[0].push_back(4);
     adj[1].push_back(2);
     adj[1].push_back(3);
-    adj[3].push_back(5);
 
     bfs(adj,n,s);
 
