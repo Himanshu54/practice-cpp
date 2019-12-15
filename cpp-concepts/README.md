@@ -2,5 +2,7 @@
 <details>
     
 *  Templates
-    - [Template Class Exam](class_templates.cpp)
+    - [Template Class Example](class_templates.cpp)
+    - [Minimum Stack](../dsa/array/minimum_stack.h)
 </details>
+
