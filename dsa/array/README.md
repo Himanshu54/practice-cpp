@@ -64,6 +64,7 @@
 </details>
 <details>
 <summary>Minimum Stack</summary>
+    
 - [Minimum Stack](minimum_stack.h)
 - [Tests](test_minimum_stack.cpp)
 </details>
