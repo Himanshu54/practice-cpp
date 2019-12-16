@@ -28,4 +28,7 @@ class MinStack{
 	T minimum(){
 		return st.top().second;
 	}
+	bool empty(){
+		return st.empty();
+	}
 };
