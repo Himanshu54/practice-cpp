@@ -62,9 +62,17 @@
     * Common Assumtion : Circular Buffer is full when there is one empty slot.
 
 </details>
+
+[Other Implementations]()
 <details>
 <summary>Minimum Stack</summary>
     
 - [Minimum Stack](minimum_stack.h)
 - [Tests](test_minimum_stack.cpp)
+</details>
+<details>
+<summary>Minimum Queue using Minimum Stack</summary>
+    
+- [Minimum Queue](minimum_queue.h)
+- [Tests](test_minimum_queue.cpp)
 </details>

@@ -5,6 +5,7 @@
 *  Templates Class
     - [Template Class Example](class_templates.cpp)
     - [Minimum Stack](../dsa/array/minimum_stack.h)
+    - [Minimum Queue](../dsa/array/minimum_queue.h)
 </details>
 <details>
 <summary> <b>new</b> keyword</summary>
