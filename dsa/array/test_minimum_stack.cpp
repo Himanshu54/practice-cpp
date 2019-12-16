@@ -8,6 +8,7 @@ int main(){
     int ar[] = {5,3,4,2,4,5,1,9};
     int tar[] = {5,3,3,2,2,2,1,1};
 
+    assert(st.empty());
     for(int i =0;i<8;i++){
 	    st.push(ar[i]);
 	    assert( tar[i] == st.minimum());
