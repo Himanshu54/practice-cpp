@@ -19,3 +19,12 @@ int socket(int domain, int type, int protocol); // input is *res from getaddrinf
 ```c
 int bind(int sockfd, struct sockaddr *my_addr, int addr_len);
 ```
+
+
+## examples
+
+`server.c` 
+test: `nc -l 127.0.0.1 5000`
+
+`client.c`
+TBD
