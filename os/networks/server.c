@@ -43,6 +43,9 @@ int main(){
 	// recive;
 	addr_size = sizeof their_addr;
 	new_fd = accept(fd, (struct sockaddr *)&their_addr, &addr_size);
+	char buf[10];
+	int bytes_recv = recv(new_fd, (void *)buf, 10, 0);
+	printf("%s : %d\n", buf, bytes_recv);
 
 	// send;
 	char *msg = "World!";
