@@ -37,11 +37,6 @@ E..5..@.@.y..........n..&..Y.........).....
  00:00:00.000014 IP localhost.5000 > localhost.33902: Flags [R], seq 386312179, win 0, length 0
 E..(..@.@.<............n........P...Z...
 ^C
-
-nc : World!<enter>
-
-04:08:50.088878 IP localhost.34682 > localhost.5000: Flags [P.], seq 1:2, ack 8, win 512, options [nop,nop,TS val 684991443 ecr 684988842], length 1
-04:08:50.088895 IP localhost.5000 > localhost.34682: Flags [R], seq 3565514347, win 0, length 0
 ---
 S	SYN	Connection Start
 F	FIN	Connection Finish
@@ -50,5 +45,12 @@ R	RST	Connection reset
 .	ACK	Acknowledgment
 ```
 
-`client.c`
-TBD
+Testing with no server `client.c`
+```bash
+ 00:00:00.000000 IP localhost.36138 > localhost.5000: Flags [S], seq 60792431, win 65495, options [mss 65495,sackOK,TS val 687705315 ecr 0,nop,wscale 7], length 0
+E..<.0@.@.E..........*.....o.........0.........
+(...........
+ 00:00:00.000010 IP localhost.5000 > localhost.36138: Flags [R.], seq 0, ack 60792432, win 0, length 0
+E..(..@.@.<............*.......pP...o...
+```
+
