@@ -8,14 +8,35 @@ $ ./a.out
 ---
 $ nc -N 127.0.0.1 5000
 ---
-$ sudo tcpdump -i lo
-04:08:47.488063 IP localhost.34682 > localhost.5000: Flags [S], seq 3569980590, win 65495, options [mss 65495,sackOK,TS val 684988842 ecr 0,nop,wscale 7], length 0
-04:08:47.488079 IP localhost.5000 > localhost.34682: Flags [S.], seq 3565514339, ack 3569980591, win 65483, options [mss 65495,sackOK,TS val 684988842 ecr 684988842,nop,wscale 7], length 0
-04:08:47.488091 IP localhost.34682 > localhost.5000: Flags [.], ack 1, win 512, options [nop,nop,TS val 684988842 ecr 684988842], length 0
-04:08:47.488174 IP localhost.5000 > localhost.34682: Flags [P.], seq 1:7, ack 1, win 512, options [nop,nop,TS val 684988842 ecr 684988842], length 6
-04:08:47.488191 IP localhost.34682 > localhost.5000: Flags [.], ack 7, win 512, options [nop,nop,TS val 684988842 ecr 684988842], length 0
-04:08:47.488206 IP localhost.5000 > localhost.34682: Flags [F.], seq 7, ack 1, win 512, options [nop,nop,TS val 684988842 ecr 684988842], length 0
-04:08:47.530221 IP localhost.34682 > localhost.5000: Flags [.], ack 8, win 512, options [nop,nop,TS val 684988884 ecr 684988842], length 0
+$ sudo tcpdump -i lo -ttt -A
+ 00:00:00.000000 IP localhost.33902 > localhost.5000: Flags [S], seq 637764440, win 65495, options [mss 65495,sackOK,TS val 686437560 ecr 0,nop,wscale 7], length 0
+E..<..@.@.y..........n..&..X.........0.........
+(.4.........
+ 00:00:00.000012 IP localhost.5000 > localhost.33902: Flags [S.], seq 386312171, ack 637764441, win 65483, options [mss 65495,sackOK,TS val 686437560 ecr 686437560,nop,wscale 7], length 0
+E..<..@.@.<............n....&..Y.....0.........
+(.4.(.4.....
+ 00:00:00.000010 IP localhost.33902 > localhost.5000: Flags [.], ack 1, win 512, options [nop,nop,TS val 686437560 ecr 686437560], length 0
+E..4..@.@.y..........n..&..Y.........(.....
+(.4.(.4.
+ 00:00:00.000047 IP localhost.5000 > localhost.33902: Flags [P.], seq 1:7, ack 1, win 512, options [nop,nop,TS val 686437560 ecr 686437560], length 6
+E..:..@.@.I3...........n....&..Y...........
+(.4.(.4.World!
+ 00:00:00.000016 IP localhost.33902 > localhost.5000: Flags [.], ack 7, win 512, options [nop,nop,TS val 686437560 ecr 686437560], length 0
+E..4..@.@.y..........n..&..Y.........(.....
+(.4.(.4.
+ 00:00:00.000012 IP localhost.5000 > localhost.33902: Flags [F.], seq 7, ack 1, win 512, options [nop,nop,TS val 686437560 ecr 686437560], length 0
+E..4..@.@.I8...........n....&..Y.....(.....
+(.4.(.4.
+ 00:00:00.043595 IP localhost.33902 > localhost.5000: Flags [.], ack 8, win 512, options [nop,nop,TS val 686437604 ecr 686437560], length 0
+E..4..@.@.y..........n..&..Y.........(.....
+(.4.(.4.
+ 00:00:27.692082 IP localhost.33902 > localhost.5000: Flags [P.], seq 1:2, ack 8, win 512, options [nop,nop,TS val 686465296 ecr 686437560], length 1
+E..5..@.@.y..........n..&..Y.........).....
+(...(.4.
+
+ 00:00:00.000014 IP localhost.5000 > localhost.33902: Flags [R], seq 386312179, win 0, length 0
+E..(..@.@.<............n........P...Z...
+^C
 
 nc : World!<enter>
 
